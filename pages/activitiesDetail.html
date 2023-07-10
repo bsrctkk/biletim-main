@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BiletPortalı</title>
+    <link rel="stylesheet" href="detail.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Copse&family=DM+Serif+Display&family=Montserrat:wght@500;600&family=Oleo+Script&family=Poppins:wght@400;500&family=Red+Hat+Display:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="head">
+        <!--<img src="./img/logos/BiletPortalı.png" width="250" height="250" /> -->
+        <h1>BiletPortalı</h1>
+      </div>
+      <div class="search">
+        <div class="search-input">
+          <input type="text" id="search" />
+          <i class="fa-solid fa-magnifying-glass" id="search-i"></i>
+        </div>
+
+        <div class="filter-search">
+          <select name="city" id="city">
+          </select>
+        </div>
+      </div>
+      <div class="register">
+        <button class="btn-register">
+          <i class="fa-solid fa-user"></i>
+          <a href="">Üye OL</a>
+        </button>
+        <button class="btn-login">
+          <i class="fa fa-sign-in" aria-hidden="true"></i>
+          <a href="">Giriş Yap</a>
+        </button>
+      </div>
+    </header>
+    <div class="nav-bar">
+      <ul class="nav-ul">
+        <li class="nav-li">
+          <i class="fas fa-microphone" id="nav"></i><a href="">Konser</a>
+        </li>
+        <li class="nav-li">
+          <i class="fas fa-theater-masks" id="nav"></i><a href="">Tiyatro</a>
+        </li>
+        <li class="nav-li">
+          <i class="fas fa-icons" id="nav"></i><a href="">Festival</a>
+        </li>
+        <li class="nav-li">
+          <i class="fas fa-volleyball-ball" id="nav"></i><a href="">Spor</a>
+        </li>
+        <li class="nav-li">
+          <i class="fas fa-grin-tears" id="nav"></i><a href="">Stand-Up</a>
+        </li>
+      </ul>
+    </div>
+    <main>
+      <section class="activities-head">
+        <br />
+        <div class="category">
+          <p>MÜZİK > DenizBank Açıkhava Etkinlikleri > Ajda Pekkan</p>
+        </div>
+        <br />
+        <div class="activitie-head">
+          <h1>Ajda Pekkan</h1>
+        </div>
+        <br />
+        <div class="activities-time">
+          <div class="time">
+            <i class="fa-solid fa-calendar-day"></i>
+            <span>9 Ağustos 2023</span>
+            <i class="fa-regular fa-clock"></i>
+            <span>21:00</span>
+          </div>
+          <div class="share">
+            <a href=""><i class="fa-solid fa-share-nodes"></i> Paylaş</a>
+          </div>
+        </div>
+      </section>
+      <section class="img">
+        <div class="img-box">
+          <img
+            src="/pages/img/25as8gorsel.jpg"
+            alt=""
+            width="1100"
+            height="500"
+          />
+        </div>
+      </section>
+      <section class="Activitie-desc">
+        <div class="desc-head">
+          <h1>Etkinliğe Dair</h1>
+        </div>
+        <div class="desc">
+          <h3>POP MÜZİĞİN SÜPER STAR’I AJDA PEKKAN 9 AĞUSTOS’TA HARBİYE’DE!</h3>
+          <br />
+          <p>
+            İstanbullular’ın vazgeçilmez konser mekanı, Harbiye Cemil Topuzlu
+            Açıkhava Tiyatrosu’nda 9 Ağustos akşamı sahnede bir süperstar
+            olacak. Söylediği şarkılar, imza attığı projeler, sahne kostümleri
+            ve konserlerindeki olağanüstü performansıyla süperstar Ajda Pekkan,
+            Harbiye Açıkhava’nın muhteşem atmosferinde seyirciyle buluşacak. 9
+            Ağustos akşamı gerçekleşecek bu konseri kaçırma!
+          </p>
+        </div>
+      </section>
+      <section class="ticket-chair">
+        <div class="chair">
+          <button id="openModal">
+            <a href="">Etkinlik Oturma Planını Gör</a>
+            <i class="fa-solid fa-greater-than"></i>
+          </button>
+          <div id="modal" class="modal">
+            <span class="close">&times;</span>
+            <img id="modalImage" src="" alt="" class="modal-content" />
+          </div>
+          <img id="c-img"
+            src="/pages/img/event-seat-link-background2.2edda74cb3121de0df63.png"
+            alt=""
+          />
+        </div>
+      </section>
+      <section class="ticket">
+        <select name="ticket-type" id="type">
+          <option>Genel Satış</option>
+        </select>
+        <select name="ticket-category" id="category">
+        </select>
+        <select name="ticket-part" id="price">
+        </select>
+      </section>
+      <section class="map">
+        <h3>
+          <i class="fa-solid fa-location-dot"></i>İstanbul Büyükşehir Belediyesi
+          Harbiye Cemil Topuzlu Açık Hava Tiyatrosu
+        </h3>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.048648379387!2d28.98745517618511!3d41.04606521709709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab77253099bb5%3A0xa73a3d0b8b295da9!2sHarbiye%20Cemil%20Topuzlu%20A%C3%A7%C4%B1k%20Hava%20Tiyatrosu!5e0!3m2!1str!2str!4v1688925155237!5m2!1str!2str"
+            width="100%"
+            height="400"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="sss">
+          <div class="follow">
+            <!--<img src="./img/logos/logos.png" width="50" height="50" />-->
+            <h1>BiletPortalı</h1>
+            <div class="f-sp">
+              <span>Bizi Takip Edin</span>
+            </div>
+            <div class="ct-social">
+              <ul class="social">
+                <li class="facebook">
+                  <a href=""
+                    ><img src="/pages/img/facebook.203247ec434fb8273284.svg"
+                  /></a>
+                </li>
+                <li class="twitter">
+                  <a href="https://twitter.com"
+                    ><img
+                      src="/pages/img/twitter.96f59a93e00c1b2f38e8.svg"
+                      alt=""
+                  /></a>
+                </li>
+                <li class="blog">
+                  <a href=""
+                    ><img src="/pages/img/blog.c0e14ce5d6852f2ab2b9.svg" alt=""
+                  /></a>
+                </li>
+                <li class="youtube">
+                  <a href="https://www.youtube.com"
+                    ><img
+                      src="/pages/img/youtube.57c332fe09d740b2458c.svg"
+                      alt=""
+                  /></a>
+                </li>
+                <li class="instagram">
+                  <a href="http://instagram.com"
+                    ><img
+                      src="/pages/img/instagram.7826927749723bb8218f.svg"
+                      alt=""
+                  /></a>
+                </li>
+                <li class="linkedin">
+                  <a href="https://www.linkedin.com"
+                    ><img
+                      src="/pages/img/linkedin.ba65374b5fbed35bb0ae.svg"
+                      alt=""
+                  /></a>
+                </li>
+                <li class="spotify">
+                  <a href="https://open.spotify.com"
+                    ><img
+                      src="/pages/img/spotify.72fecdbb4230aee1a765.svg"
+                      alt=""
+                  /></a>
+                </li>
+              </ul>
+            </div>
+            <div class="f-h2">
+              <h2>Uygulamalarımız</h2>
+            </div>
+            <div class="app">
+              <ul class="app-icon">
+                <li>
+                  <a href=""
+                    ><img
+                      alt="BiletPort Ios App"
+                      src="/pages/img/app-store.svg"
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      alt="BiletPort Android App"
+                      src="/pages/img/play-store.svg"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="about">
+            <div class="about-con">
+              <h2>Hakkımızda</h2>
+              <ul class="about-list">
+                <li><a href="">Biz Kimiz</a></li>
+                <li><a href="">Kurum Politikamız</a></li>
+                <li><a href="">Görsel Materyaller</a></li>
+                <li><a href="">Bize Ulaşın</a></li>
+                <li><a href="">Live Nation Entertainment</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="help">
+            <div class="help-con">
+              <h2>Yardım Edelim</h2>
+              <ul class="help-list">
+                <li><a href="">Yardım/SSS</a></li>
+                <li><a href="">Satış Kanalları</a></li>
+                <li><a href="">Hesabım</a></li>
+                <li><a href="">Hediye Kart</a></li>
+                <li><a href="">Etkinlik Katılım Sigortası</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="work">
+            <div class="work-con">
+              <h2>Bizimle Çalışın</h2>
+              <ul class="work-list">
+                <li><a href="">Etkinlik Biletleriniz</a></li>
+                <li><a href="">Reklam Verin</a></li>
+                <li><a href="">Kariyer</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="sss-addition">
+          <div class="notifications-list">
+            <ul class="ntf-list">
+              <li><a href="">TTK Bildirimleri</a></li>
+              <li><a href="">Gizlilik Politikası</a></li>
+              <li><a href="">Çerez Politikası</a></li>
+              <li><a href="">Tercihleri Yönet</a></li>
+              <li><a href="">Sözleşme ve Politikalar</a></li>
+            </ul>
+          </div>
+          <div class="desc">
+            <span>
+              © 2022 Biletix Bilet Dağıtım Basım ve Tic. A.Ş. Tüm hakları
+              saklıdır.
+            </span>
+          </div>
+        </div>
+        <div class="container-ss">
+          <span>
+            Bu internet sitesinin kullanımı, ticari kullanımı engelleyen
+            Kullanım Koşulları'na tabidir. Bu sayfayı geçtiğinizde bu koşulları
+            kabul etmiş sayılırsınız.
+          </span>
+        </div>
+      </div>
+    </footer>
+    <script src="/pages/detail.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </body>
+</html>
